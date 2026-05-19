@@ -1,0 +1,38 @@
+\usepackage{microtype}
+\usepackage{mathpazo}
+\usepackage[scaled=0.92]{helvet}
+\definecolor{accent}{HTML}{1F3A68}
+\definecolor{rulecol}{HTML}{C0C0C0}
+
+\usepackage{titlesec}
+\titleformat{\section}
+  {\sffamily\LARGE\bfseries\color{accent}}
+  {}{0pt}{}
+\titleformat{\subsection}
+  {\sffamily\large\bfseries\color{accent}}
+  {}{0pt}{}
+\titlespacing*{\section}{0pt}{1.2em}{0.5em}
+\titlespacing*{\subsection}{0pt}{1.2em}{0.4em}
+
+\usepackage{enumitem}
+\setlist[enumerate]{itemsep=3pt, topsep=4pt, parsep=0pt, leftmargin=1.5em}
+\setlist[itemize]{itemsep=3pt, topsep=4pt, parsep=0pt, leftmargin=1.5em}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\sffamily\small\color{accent}AI Tools for Economics Research}
+\fancyhead[R]{\sffamily\small\color{accent}\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\setlength{\headheight}{14pt}
+
+\fancypagestyle{plain}{%
+  \fancyhf{}%
+  \fancyhead[L]{\sffamily\small\color{accent}AI Tools for Economics Research}%
+  \fancyhead[R]{\sffamily\small\color{accent}\thepage}%
+  \renewcommand{\headrulewidth}{0pt}%
+}
+
+\setlength{\parskip}{4pt}
+\setlength{\parindent}{0pt}

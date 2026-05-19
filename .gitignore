@@ -1,0 +1,23 @@
+# macOS
+.DS_Store
+
+# Slide content — not published yet; release when ready by removing this block
+slides/decks/*
+!slides/decks/.gitkeep
+slides/assets/*
+!slides/assets/.gitkeep
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+
+# Editor
+.vscode/
+.idea/
+
+# Claude Code local state
+.claude/
