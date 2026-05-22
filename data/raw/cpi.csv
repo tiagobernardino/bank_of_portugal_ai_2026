@@ -1,3 +1,9 @@
+# Consumer Price Index for All Urban Consumers: All Items
+# Source: U.S. Bureau of Labor Statistics (FRED series CPIAUCSL)
+# Units: Index 1982-1984=100, Seasonally Adjusted
+# Frequency: Monthly
+# Retrieved: 2026-05-15
+
 observation_date,CPIAUCSL
 1947-01-01,21.480
 1947-02-01,21.620

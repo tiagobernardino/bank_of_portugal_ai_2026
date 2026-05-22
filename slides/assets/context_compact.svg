@@ -1,0 +1,65 @@
+<svg viewBox="0 0 540 590" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .hdr      { font-family: -apple-system, Inter, sans-serif; font-size: 13px; fill: #6b6a66; text-transform: uppercase; letter-spacing: 0.14em; }
+      .lbl      { font-family: -apple-system, Inter, sans-serif; font-size: 12px; fill: #6b6a66; }
+      .lbl-a    { font-family: -apple-system, Inter, sans-serif; font-size: 15px; font-weight: 500; fill: #cc785c; letter-spacing: 0.02em; }
+      .lbl-mono { font-family: "JetBrains Mono", "SF Mono", Menlo, monospace; font-size: 16px; fill: #cc785c; }
+      .cap      { font-family: -apple-system, Inter, sans-serif; font-size: 14px; fill: #6b6a66; }
+    </style>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#cc785c"/>
+    </marker>
+  </defs>
+
+  <!-- Column headers -->
+  <text x="110" y="30" text-anchor="middle" class="hdr">before</text>
+  <text x="430" y="30" text-anchor="middle" class="hdr">after</text>
+
+  <!-- ============ BEFORE: long stack ============ -->
+  <!-- preamble -->
+  <rect x="40" y="55"  width="140" height="20" fill="#ecebe3" stroke="#a8a59e" stroke-width="0.8"/>
+  <rect x="40" y="79"  width="140" height="20" fill="#ecebe3" stroke="#a8a59e" stroke-width="0.8"/>
+  <rect x="40" y="103" width="140" height="20" fill="#ecebe3" stroke="#a8a59e" stroke-width="0.8"/>
+
+  <!-- turn 1 -->
+  <rect x="40" y="135" width="140" height="20" fill="#f5e7df" stroke="#cc785c" stroke-width="0.8"/>
+  <rect x="40" y="159" width="140" height="20" fill="#f1efe7" stroke="#a8a59e" stroke-width="0.8"/>
+  <rect x="40" y="183" width="140" height="20" fill="#f1efe7" stroke="#a8a59e" stroke-width="0.8"/>
+  <rect x="40" y="207" width="140" height="20" fill="#e3e1d8" stroke="#6b6a66" stroke-width="0.8"/>
+
+  <!-- turn 2 -->
+  <rect x="40" y="239" width="140" height="20" fill="#f5e7df" stroke="#cc785c" stroke-width="0.8"/>
+  <rect x="40" y="263" width="140" height="20" fill="#f1efe7" stroke="#a8a59e" stroke-width="0.8"/>
+  <rect x="40" y="287" width="140" height="20" fill="#f1efe7" stroke="#a8a59e" stroke-width="0.8"/>
+  <rect x="40" y="311" width="140" height="20" fill="#e3e1d8" stroke="#6b6a66" stroke-width="0.8"/>
+
+  <!-- turn 3 -->
+  <rect x="40" y="343" width="140" height="20" fill="#f5e7df" stroke="#cc785c" stroke-width="0.8"/>
+  <rect x="40" y="367" width="140" height="20" fill="#f1efe7" stroke="#a8a59e" stroke-width="0.8"/>
+  <rect x="40" y="391" width="140" height="20" fill="#f1efe7" stroke="#a8a59e" stroke-width="0.8"/>
+  <rect x="40" y="415" width="140" height="20" fill="#e3e1d8" stroke="#6b6a66" stroke-width="0.8"/>
+
+  <!-- ellipsis -->
+  <circle cx="100" cy="455" r="2" fill="#a8a59e"/>
+  <circle cx="110" cy="455" r="2" fill="#a8a59e"/>
+  <circle cx="120" cy="455" r="2" fill="#a8a59e"/>
+
+  <!-- ============ AFTER: collapsed stack ============ -->
+  <!-- preamble (unchanged) -->
+  <rect x="360" y="55"  width="140" height="20" fill="#ecebe3" stroke="#a8a59e" stroke-width="0.8"/>
+  <rect x="360" y="79"  width="140" height="20" fill="#ecebe3" stroke="#a8a59e" stroke-width="0.8"/>
+  <rect x="360" y="103" width="140" height="20" fill="#ecebe3" stroke="#a8a59e" stroke-width="0.8"/>
+
+  <!-- summary block replaces conversation turns -->
+  <rect x="360" y="135" width="140" height="100" fill="#faf3ef" stroke="#cc785c" stroke-width="1.4"/>
+  <text x="430" y="180" text-anchor="middle" class="lbl-a">summary</text>
+  <text x="430" y="200" text-anchor="middle" class="lbl">of prior turns</text>
+
+  <!-- ============ /compact arrow ============ -->
+  <line x1="200" y1="255" x2="350" y2="255" stroke="#cc785c" stroke-width="2" marker-end="url(#arr)"/>
+  <text x="275" y="240" text-anchor="middle" class="lbl-mono">/compact</text>
+
+  <!-- Caption -->
+  <text x="270" y="555" text-anchor="middle" class="cap">preamble stays · conversation collapses into a summary</text>
+</svg>

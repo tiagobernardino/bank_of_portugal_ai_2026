@@ -1,0 +1,27 @@
+<svg viewBox="0 0 600 360" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#cc785c"/>
+    </marker>
+  </defs>
+
+  <!-- ŷ: italic y with explicit hat -->
+  <text x="180" y="140" font-family="Charter, Georgia, serif" font-style="italic" font-size="72" fill="#1f1e1d">y</text>
+  <path d="M 188 80 L 197 70 L 206 80" stroke="#1f1e1d" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- = -->
+  <text x="232" y="140" font-family="Charter, Georgia, serif" font-size="72" fill="#1f1e1d">=</text>
+
+  <!-- β̂: italic β with explicit hat (orange) -->
+  <text x="302" y="140" font-family="Charter, Georgia, serif" font-style="italic" font-size="72" fill="#cc785c">β</text>
+  <path d="M 316 80 L 325 70 L 334 80" stroke="#cc785c" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- x -->
+  <text x="368" y="140" font-family="Charter, Georgia, serif" font-style="italic" font-size="72" fill="#1f1e1d">x</text>
+
+  <!-- Annotation arrow from below up to β̂ -->
+  <line x1="325" y1="280" x2="325" y2="175" stroke="#cc785c" stroke-width="1.6" marker-end="url(#arrow)"/>
+
+  <!-- Label -->
+  <text x="325" y="320" text-anchor="middle" font-family="-apple-system, Inter, Helvetica, sans-serif" font-size="22" font-weight="500" fill="#1f1e1d">Deep Neural Network</text>
+</svg>

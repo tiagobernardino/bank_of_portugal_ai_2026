@@ -1,0 +1,78 @@
+<svg viewBox="0 0 500 525" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .lbl       { font-family: -apple-system, Inter, "Helvetica Neue", sans-serif; font-size: 12px; fill: #1f1e1d; }
+      .lbl-muted { font-family: -apple-system, Inter, "Helvetica Neue", sans-serif; font-size: 12px; fill: #6b6a66; }
+      .lbl-mono  { font-family: "JetBrains Mono", "SF Mono", Menlo, monospace;     font-size: 11px; fill: #1f1e1d; }
+      .lbl-it    { font-family: Charter, Georgia, serif; font-style: italic;        font-size: 12px; fill: #1f1e1d; }
+      .br-lbl    { font-family: -apple-system, Inter, sans-serif; font-size: 12px; fill: #6b6a66; letter-spacing: 0.02em; }
+      .br-lbl-a  { font-family: -apple-system, Inter, sans-serif; font-size: 12px; fill: #cc785c; letter-spacing: 0.02em; }
+    </style>
+  </defs>
+
+  <!-- ============ Hidden preamble ============ -->
+  <rect x="30" y="20"  width="270" height="28" fill="#ecebe3" stroke="#a8a59e" stroke-width="1"/>
+  <text x="44" y="39"  class="lbl-muted">system prompt</text>
+
+  <rect x="30" y="53"  width="270" height="28" fill="#ecebe3" stroke="#a8a59e" stroke-width="1"/>
+  <text x="44" y="72"  class="lbl-muted">CLAUDE.md</text>
+
+  <rect x="30" y="86"  width="270" height="28" fill="#ecebe3" stroke="#a8a59e" stroke-width="1"/>
+  <text x="44" y="105" class="lbl-muted">built-in tools</text>
+
+  <!-- ============ Turn 1 ============ -->
+  <rect x="30" y="132" width="270" height="28" fill="#f5e7df" stroke="#cc785c" stroke-width="1"/>
+  <text x="44" y="151" class="lbl-it">"compute YoY inflation"</text>
+
+  <rect x="30" y="165" width="270" height="28" fill="#f1efe7" stroke="#a8a59e" stroke-width="1"/>
+  <text x="44" y="184" class="lbl-mono">Read(data/raw/cpi.csv)</text>
+
+  <rect x="30" y="198" width="270" height="28" fill="#f1efe7" stroke="#a8a59e" stroke-width="1"/>
+  <text x="44" y="217" class="lbl-mono">Write(code/inflation.py)</text>
+
+  <rect x="30" y="231" width="270" height="28" fill="#f1efe7" stroke="#a8a59e" stroke-width="1"/>
+  <text x="44" y="250" class="lbl-mono">Bash(python inflation.py)</text>
+
+  <rect x="30" y="264" width="270" height="28" fill="#e3e1d8" stroke="#6b6a66" stroke-width="1"/>
+  <text x="44" y="283" class="lbl">assistant: "Done. First 12 NaN."</text>
+
+  <!-- ============ Turn 2 ============ -->
+  <rect x="30" y="310" width="270" height="28" fill="#f5e7df" stroke="#cc785c" stroke-width="1"/>
+  <text x="44" y="329" class="lbl-it">"now plot it"</text>
+
+  <rect x="30" y="343" width="270" height="28" fill="#f1efe7" stroke="#a8a59e" stroke-width="1"/>
+  <text x="44" y="362" class="lbl-mono">Read(data/processed/inflation.csv)</text>
+
+  <rect x="30" y="376" width="270" height="28" fill="#f1efe7" stroke="#a8a59e" stroke-width="1"/>
+  <text x="44" y="395" class="lbl-mono">Write(code/plot.py)</text>
+
+  <rect x="30" y="409" width="270" height="28" fill="#e3e1d8" stroke="#6b6a66" stroke-width="1"/>
+  <text x="44" y="428" class="lbl">assistant: "Plot saved."</text>
+
+  <!-- ============ Ellipsis ============ -->
+  <circle cx="160" cy="460" r="2" fill="#a8a59e"/>
+  <circle cx="170" cy="460" r="2" fill="#a8a59e"/>
+  <circle cx="180" cy="460" r="2" fill="#a8a59e"/>
+
+  <!-- ============ Brackets and labels ============ -->
+  <!-- Preamble brace (y1=20, y2=114, ymid=67) -->
+  <path d="M 305 20 Q 312 20 312 26 L 312 61 Q 312 67 320 67 Q 312 67 312 73 L 312 108 Q 312 114 305 114"
+        fill="none" stroke="#a8a59e" stroke-width="1.2"/>
+  <text x="328" y="71" class="br-lbl">hidden preamble</text>
+
+  <!-- User prompt callout (turn 1) -->
+  <line x1="302" y1="146" x2="320" y2="146" stroke="#cc785c" stroke-width="1.2"/>
+  <text x="328" y="150" class="br-lbl-a">user prompt</text>
+
+  <!-- Tool calls brace (turn 1, y1=165, y2=259, ymid=212) -->
+  <path d="M 305 165 Q 312 165 312 171 L 312 206 Q 312 212 320 212 Q 312 212 312 218 L 312 253 Q 312 259 305 259"
+        fill="none" stroke="#a8a59e" stroke-width="1.2"/>
+  <text x="328" y="216" class="br-lbl">tool calls (hidden)</text>
+
+  <!-- Model reply callout (turn 1) -->
+  <line x1="302" y1="278" x2="320" y2="278" stroke="#6b6a66" stroke-width="1.2"/>
+  <text x="328" y="282" class="br-lbl">model reply</text>
+
+  <!-- ============ Growth annotation ============ -->
+  <text x="165" y="500" text-anchor="middle" class="lbl-muted">each turn replays the whole stack</text>
+</svg>

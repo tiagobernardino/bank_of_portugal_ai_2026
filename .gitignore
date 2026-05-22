@@ -1,11 +1,16 @@
 # macOS
 .DS_Store
 
-# Slide content — not published yet; release when ready by removing this block
+# Slide content — release one session at a time.
+# To publish a session, add a `!` line for its .md and .pdf.
 slides/decks/*
 !slides/decks/.gitkeep
+!slides/decks/theme.css
+!slides/decks/session1.md
+!slides/decks/session1.pdf
 slides/assets/*
 !slides/assets/.gitkeep
+!slides/assets/*.svg
 
 # Python
 __pycache__/
@@ -21,3 +26,9 @@ env/
 
 # Claude Code local state
 .claude/
+
+# Session 2 demo corpus — keep the whole folder untracked until Session 2 ships.
+papers/
+
+# Participant roster (PII)
+Participants_AI Course.pdf

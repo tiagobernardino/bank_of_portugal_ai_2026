@@ -17,8 +17,15 @@ bank_of_portugal_ai_2026/
 ├── data/
 │   ├── raw/          # Original data (e.g. cpi.csv from FRED)
 │   └── processed/    # Derived files written by demo code
+├── papers/           # PDFs used in the Session 2 literature-triage demo
 └── docs/             # Syllabus (.md and .pdf)
 ```
+
+Session-by-session plan: [`docs/syllabus.pdf`](docs/syllabus.pdf).
+
+## Prerequisites
+
+Claude Code (with an active subscription) and git. VS Code + Copilot is optional.
 
 ## Getting the repo
 

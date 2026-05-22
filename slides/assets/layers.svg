@@ -1,0 +1,17 @@
+<svg viewBox="0 0 600 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- outer: Interface -->
+  <rect x="20" y="20" width="560" height="460" fill="none" stroke="#1f1e1d" stroke-width="1.5"/>
+  <text x="42" y="56" font-family="-apple-system, Inter, Helvetica, sans-serif" font-size="22" font-weight="500" fill="#1f1e1d">Interface</text>
+  <text x="42" y="80" font-family="-apple-system, Inter, Helvetica, sans-serif" font-size="14" fill="#6b6a66">terminal · editor · browser</text>
+
+  <!-- middle: Agent -->
+  <rect x="70" y="120" width="460" height="320" fill="none" stroke="#1f1e1d" stroke-width="1.5"/>
+  <text x="92" y="156" font-family="-apple-system, Inter, Helvetica, sans-serif" font-size="22" font-weight="500" fill="#1f1e1d">Agent</text>
+  <text x="92" y="180" font-family="-apple-system, Inter, Helvetica, sans-serif" font-size="14" fill="#6b6a66">context · tools · permissions</text>
+
+  <!-- inner: Model -->
+  <rect x="140" y="225" width="320" height="170" fill="none" stroke="#cc785c" stroke-width="2"/>
+  <text x="162" y="262" font-family="-apple-system, Inter, Helvetica, sans-serif" font-size="22" font-weight="500" fill="#cc785c">Model</text>
+  <text x="162" y="286" font-family="-apple-system, Inter, Helvetica, sans-serif" font-size="14" fill="#6b6a66">next-token predictor</text>
+  <text x="162" y="306" font-family="-apple-system, Inter, Helvetica, sans-serif" font-size="14" fill="#6b6a66">stateless · handless</text>
+</svg>
