@@ -39,5 +39,3 @@ cd bank_of_portugal_ai_2026
 - Slides are PDFs in `slides/decks/`.
 - The Session 1 demo reads `data/raw/cpi.csv` (US CPI from FRED) and produces `data/processed/inflation.csv` via a Python script the agent writes during class.
 - To work in the repo yourself: `claude` (or your CLI of choice).
-
-test
