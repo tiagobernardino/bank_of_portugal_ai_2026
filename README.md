@@ -39,3 +39,13 @@ cd bank_of_portugal_ai_2026
 - Slides are PDFs in `slides/decks/`.
 - The Session 1 demo reads `data/raw/cpi.csv` (US CPI from FRED) and produces `data/processed/inflation.csv` via a Python script the agent writes during class.
 - To work in the repo yourself: `claude` (or your CLI of choice).
+
+## Running the Python yourself
+
+The demo scripts need Python ≥ 3.11 and a couple of packages:
+
+```
+pip install -r requirements.txt
+```
+
+Run them from the repo root — paths such as `data/raw/cpi.csv` are relative. Or just let Claude Code set up the environment and run the script for you.
