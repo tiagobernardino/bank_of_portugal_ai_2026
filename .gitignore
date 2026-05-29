@@ -8,6 +8,8 @@ slides/decks/*
 !slides/decks/theme.css
 !slides/decks/session1.md
 !slides/decks/session1.pdf
+!slides/decks/session2.md
+!slides/decks/session2.pdf
 slides/assets/*
 !slides/assets/.gitkeep
 !slides/assets/*.svg
@@ -27,7 +29,8 @@ env/
 # Claude Code local state
 .claude/
 
-# Session 2 demo corpus — keep the whole folder untracked until Session 2 ships.
+# Demo paper corpus — copyrighted PDFs; kept untracked on this public repo.
+# Distribute to students through a private channel, not git.
 papers/
 
 # Participant roster (PII)

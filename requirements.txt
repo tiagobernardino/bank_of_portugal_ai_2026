@@ -1,0 +1,4 @@
+# Python dependencies for the in-class demo scripts (tested on Python 3.11).
+# Intentionally unpinned: see Session 2 §04 — old hard pins are what rot.
+pandas
+matplotlib
